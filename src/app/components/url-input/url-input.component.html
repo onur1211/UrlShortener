@@ -1,0 +1,10 @@
+<div id="urlInputMain">
+  <span class="p-float-label">
+    <input class="p-inputtext-lg" pInputText id="orginalurl" [(ngModel)]="originalUrl" />
+    <label for="orginalurl">Your URL</label>
+  </span>
+  <p-button
+    label="Submit"
+    [raised]="true" [loading]="loading" (onClick)="load();startURLShorteningProcess()">
+  </p-button>
+</div>
