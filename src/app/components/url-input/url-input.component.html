@@ -7,4 +7,10 @@
     label="Submit"
     [raised]="true" [loading]="loading" (onClick)="load();startURLShorteningProcess()">
   </p-button>
+  <div>
+    <p>New short URL: 
+      <!-- Option 2: URL als anklickbaren Link -->
+      <a [href]="shortenedUrl" target="_blank">{{ shortenedUrl }}</a>
+    </p>
+  </div>
 </div>
